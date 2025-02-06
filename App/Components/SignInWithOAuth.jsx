@@ -14,7 +14,7 @@ const SignInWithOAuth = () => {
     try {
       console.log('Starting OAuth flow...');
       const response = await startOAuthFlow({
-        redirectUrl: Linking.createURL('/dashboard', { scheme: 'myapp' }),
+        redirectUrl: Linking.createURL('/dashboard', { scheme: 'AppointmentApp' }),
       });
 
       const { createdSessionId, setActive } = response || {};

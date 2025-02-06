@@ -4,7 +4,7 @@ import React from 'react'
 export default function Appointment() {
   return (
     <View styles={styles.heading}>
-      <Text style={{fontFamily:"calibri", fontWeight:"bold"}}>Here is the appointment app</Text>
+      <Text style={{fontFamily:"calibri", fontWeight:"bold"}}>Appointment page</Text>
     </View>
   )
 }

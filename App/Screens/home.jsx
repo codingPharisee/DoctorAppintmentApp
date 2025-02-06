@@ -16,7 +16,7 @@ export default function Home() {
       <Headers/>
       <Searchbar/>
       <View >
-        <Button style={{alignItems:"center"}} title="sign out" onPress={()=>signOut()}></Button>
+      <Button style={{alignItems:"center"}} title="sign out" onPress={()=>signOut()}></Button>
       </View>
      
       

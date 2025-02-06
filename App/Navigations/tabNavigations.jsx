@@ -6,6 +6,7 @@ import Home from '../Screens/home'
 import Profile from '../Screens/profile'
 import Appointment from '../Screens/appointment'
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { ScreenStack , Stack} from 'react-native-screens'
 
 
 
