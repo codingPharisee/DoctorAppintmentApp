@@ -8,8 +8,8 @@ export default function Login() {
   return (
     <View style={{alignItems:'center'}}>
       <TouchableOpacity  onPress ={()=>console.log("image pressed")}>
-    <Image  source={App}
-      style={{ width: 300, height: 550, borderColor:"black" }} />
+    <Image  source='https://media.istockphoto.com/id/1530248188/photo/senior-doctor-using-digital-tablet-walking-with-nurses-in-hospital-corridor.webp?a=1&b=1&s=612x612&w=0&k=20&c=a95e7ZQmkD85njqm5IeEMM6l9W-vcprBpxWZfOD9vXM='
+      style={{ width: 300, height: 500, borderColor:"black" }} />
       </TouchableOpacity>
 
     <View style={{

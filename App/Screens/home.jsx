@@ -4,6 +4,7 @@ import { useAuth } from '@clerk/clerk-expo'
 import { Header } from '@react-navigation/stack';
 import Headers from '../Components/header';
 import Searchbar from '../Components/searchbar';
+import Slider from '../Components/slider';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <View  styles={styles.heading}>
       <Headers/>
       <Searchbar/>
+      <Slider/>
       <View >
       <Button style={{alignItems:"center"}} title="sign out" onPress={()=>signOut()}></Button>
       </View>
