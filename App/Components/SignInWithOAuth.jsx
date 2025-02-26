@@ -33,7 +33,7 @@ const SignInWithOAuth = () => {
   return (
     <View style={styles.container}>
       
-        <Button title="Sign in with Google" onPress={handleOAuthSignIn} />
+        <Button title="Sign in with Google" onPress={handleOAuthSignIn } />
       
     </View>
   );
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
    
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f8f8',
+    backgroundColor: 'black',
   },
   welcomeText: {
     fontSize: 18,
