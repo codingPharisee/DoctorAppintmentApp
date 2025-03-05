@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native';
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { AntDesign } from '@expo/vector-icons';
-
-import Home from '../Screens/home';
-import Profile from '../Screens/profile';
-import Appointment from '../Screens/appointment';
+import { View, Text } from "react-native";
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { AntDesign } from "@expo/vector-icons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import Home from "../Screens/home";
+import Profile from "../Screens/profile";
+import Appointment from "../Screens/appointment";
+import Messages from "../Screens/messages";
 
 const Tabs = createBottomTabNavigator();
 
@@ -36,6 +37,16 @@ export default function TabNavigation() {
         options={{
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="user" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name= "Messages" 
+        component={Messages}
+        options=
+        {{
+          tabBarIcon: ({ color,size }) => (
+            <AntDesign name="message1" size={size} color={color} />
           ),
         }}
       />

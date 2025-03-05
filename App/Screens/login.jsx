@@ -6,21 +6,23 @@ import SignInWithOAuth from '../Components/SignInWithOAuth'
 
 export default function Login() {
   return (
-    <View style={{alignItems:'center', backgroundColor: '#F8FFE5'}}>
+    <View style={{alignItems:'center', backgroundColor: 'white'}}>
       <TouchableOpacity  onPress ={()=>console.log("image pressed")}>
-    <Image  source={{uri:'https://media.istockphoto.com/id/1530248188/photo/senior-doctor-using-digital-tablet-walking-with-nurses-in-hospital-corridor.webp?a=1&b=1&s=612x612&w=0&k=20&c=a95e7ZQmkD85njqm5IeEMM6l9W-vcprBpxWZfOD9vXM='}}
-      style={{ width: 350, height: 659, borderColor:"black" , alignItems:'center', backgroundColor:'#F8FFE5',borderRadius:18}} />
+    <Image  source={{uri:'https://cdn.dribbble.com/userupload/37753359/file/original-e98099cbf6dbaa40eda7e9c3e2e2d7ac.png?resize=1024x768&vertical=center'}}
+      style={{ width: 350, height: 600, borderColor:"black" , alignItems:'center', backgroundColor:'#F8FFE5',borderbottomLeftRadius:18}} />
       </TouchableOpacity>
 
     <View style={{
-      padding:20,
-      marginTop:-50,
-      backgroundColor:"#06D6A0",
-      borderRadius:5,
+      padding:50,
+      paddingBottom:20,
+      marginTop:-55,
+      backgroundColor:"#fefeff",
+      borderTopRightRadius:40,
+      borderTopLeftRadius:40,
       }}>
         <Text style={styles.heading}>Your Ultimate Doctor 👨‍⚕️ </Text>
-          <Text style={styles.heading}>Appointment App</Text>
-          <Text>Book Your Appointment and Start your Health Journey Today!</Text>
+          <Text style={styles.subHeading} >Appointment App</Text>
+          <Text style={{fontSize:14}}>Book Your Appointment and Start your Health Journey Today!</Text>
     </View>
 
     <View > 
@@ -33,12 +35,18 @@ export default function Login() {
 }
 const styles = StyleSheet.create({
   heading:{
-    fontSize:25,
+    fontSize:30,
     fontWeight:'bold',
     alignSelf:"center",
     fontfamily:"glitten",
     
      
-  }
+  },
+  subHeading:{
+    fontSize:30,
+    fontWeight:'bold',
+    alignSelf:"center",
+    fontfamily:"glitten",
+    color:'#199671'}
   
 })

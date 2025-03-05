@@ -31,9 +31,9 @@ const SignInWithOAuth = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View >
       
-        <Button title="Sign in with Google" onPress={handleOAuthSignIn } />
+        <Button style={styles.container} color='#5ae4c4' title="Get Started" onPress={handleOAuthSignIn }  />
       
     </View>
   );
@@ -44,7 +44,9 @@ const styles = StyleSheet.create({
    
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    borderRadius:99,
+    
+    
   },
   welcomeText: {
     fontSize: 18,

@@ -22,7 +22,7 @@ export default function Searchbar() {
        }}>
     <EvilIcons name="search" size={24} color="blue" />
       <TextInput 
-      placeholder='search'
+      placeholder='Health issue or Doctor'
       onChangeText={(value)=>setSearchInput(value)} 
       onSubmitEditing={()=>console.log(searchInput)}
       />
