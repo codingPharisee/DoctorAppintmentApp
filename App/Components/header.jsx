@@ -29,7 +29,7 @@ return (
                 source={{uri:user.imageUrl}}
                 style={{width:30, height:30, borderRadius:50}}/>
                 <View >
-                    <Text>hello </Text>
+                    <Text>hello 🖐</Text>
                     <Text>{user.firstName}</Text>
                 </View>
             </View>
